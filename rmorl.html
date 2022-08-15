@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  
+  $('.moreless-button').click(function() {
+  $('.moretext').slideToggle();
+  if ($('.moreless-button').text() == "Read more") {
+    $(this).text("Read less")
+  } else {
+    $(this).text("Read more")
+  }
+});
+
+});
+</script>
+<style>
+
+#section {
+  width: 500px;
+  height: auto;
+  word-wrap: break-word;
+}
+
+.moretext {
+  display: none;
+}
+
+
+</style>
+</head>
+<body>
+
+
+<div id="section">
+  <div class="article">
+    <p>Bacon ipsum dolor amet sirloin jowl turducken pork loin pig pork belly, chuck cupim tongue beef doner tri-tip pancetta spare ribs porchetta. 
+    </p>
+    <p class="moretext">
+      Brisket ball tip cow sirloin. Chuck porchetta kielbasa pork chop doner sirloin, bacon beef brisket ball tip short ribs. 
+    </p>
+  </div>
+  <a class="moreless-button" href="#">Read more</a>
+</div>
+
+</body>
+</html>
